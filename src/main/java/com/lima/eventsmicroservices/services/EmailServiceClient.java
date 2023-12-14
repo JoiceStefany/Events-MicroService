@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import com.lima.eventsmicroservices.dtos.EmailRequestDTO;
 
-@FeignClient(name = "email-service", url = "http://localhost:8090/api/email");
+@FeignClient
 public interface EmailServiceClient {
 
     @PostMapping("/send")
